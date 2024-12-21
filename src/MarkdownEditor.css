@@ -1,0 +1,58 @@
+/* MarkdownEditor.css */
+.markdown-editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    box-sizing: border-box;
+  }
+  
+  .markdown-textarea {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+  }
+  
+  .markdown-preview {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .markdown-editor-container {
+      padding: 10px;
+    }
+  
+    .markdown-textarea {
+      font-size: 14px;
+    }
+  
+    .markdown-preview {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .markdown-textarea {
+      font-size: 12px;
+    }
+  
+    .markdown-preview {
+      font-size: 14px;
+    }
+  }
+  
